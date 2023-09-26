@@ -1,0 +1,31 @@
+
+.body-galeria {
+    background-image: linear-gradient(
+        rgba(0,0,0,1),
+        rgba(0,0,0,0.5)
+    ), url(img/image\ 6.png);
+    background-size: cover;
+    background-attachment: fixed ;
+    overflow-x: hidden;
+}
+
+
+.main-galery h1 {
+    display: flex;
+    color: #FC4E03;
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 100px;
+    justify-content: center ;
+}
+
+.main-galery p {
+    color:white;
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 36px;
+    display: flex;
+    justify-content: center ;
+}
+
+.galeria__container {
+    padding: 4em;
+}

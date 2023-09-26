@@ -12,6 +12,9 @@ a {
     padding: 10px 5px;
     align-items: center;
 }
+.header a {
+    text-decoration: none;
+}
 .navbar-item{
     color: white;
     padding-right: 30px;
@@ -101,7 +104,7 @@ a {
     padding-bottom: 100px;
 }
 
-footer{
+footer {
     background-color: transparent;
     display: flex;
     align-items: flex-end;
@@ -112,18 +115,21 @@ footer{
 }
 footer p{ 
     color: white;
-    font-family: sans-serif;
+    font-family: sans-serif; 
+    padding-right: 1em;
 }
 .footer-logo{
     padding-bottom: 5px;
     height:60px;
     margin-bottom: 16px;
+    padding-left: 1em;
 }
 
 .aser {
     display: flex;
     height: 60px;
     width: 341px;
+
 }
 
 .social-ico{
@@ -133,7 +139,9 @@ footer p{
 .icons-social-container{
     font-weight: bolder;
     display: inline-block;
+    padding-bottom: 1em;
 }
+
 
 
 /* @media (max-width:700px){
@@ -149,62 +157,6 @@ footer p{
         padding-left: 0px;
     }
 } */
-
-
-.body-galeria {
-    background-image: linear-gradient(
-        rgba(0,0,0,1),
-        rgba(0,0,0,0.5)
-    ), url(img/image\ 6.png);
-    background-size: cover;
-    background-attachment: fixed ;
-}
-
-
-.main-galery h1 {
-    display: flex;
-    color: #FC4E03;
-    font-family: 'Bowlby One SC', cursive;
-    font-size: 100px;
-    justify-content: center ;
-}
-
-.main-galery p {
-    color:white;
-    font-family: 'Bowlby One SC', cursive;
-    font-size: 36px;
-    display: flex;
-    justify-content: center ;
-}
-
-.sec1 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.sec2 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.sec3 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.sec4 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.container-galery img {
-    padding: 15px;
-    border-radius: 10%;
-}
-
 
 
 .body-discos {
