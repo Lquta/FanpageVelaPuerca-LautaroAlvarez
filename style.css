@@ -4,10 +4,13 @@ a {
     font-size: 25px;
     font-weight: 900;
 }
+img{
+    max-width: 100%;
+}
+
 .header {
     display: flex;
     min-height: 70px;
-    color: white;
     justify-content: space-between;
     padding: 10px 5px;
     align-items: center;
@@ -31,7 +34,14 @@ a {
 .navbar a:hover {
     color: orange;
     transition: .3s;
+    transform: scale(1.06);
 }
+.navbar-logo img:hover {
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+
 
 .body-menu{
     background-image: linear-gradient(
@@ -85,6 +95,13 @@ a {
     flex-wrap: nowrap;
     overflow: scroll;
     overflow-y: hidden;
+    
+}
+.section-2 img:hover {
+
+    transform: scale(1.06);
+    transition: .12s;
+    
 }
 
 .elemento{
@@ -103,7 +120,9 @@ a {
     padding-top: 100px;
     padding-bottom: 100px;
 }
-
+.spotify-widget-mobile {
+    display: none;
+}
 footer {
     background-color: transparent;
     display: flex;
@@ -142,23 +161,7 @@ footer p{
     padding-bottom: 1em;
 }
 
-
-
-/* @media (max-width:700px){
-    .header{
-        flex-direction: column ;
-    }
-
-    .navbar{
-        padding: 10px 0px;
-    }
-
-    .navbar-logo img {
-        padding-left: 0px;
-    }
-} */
-
-
+/* Discos */
 .body-discos {
     background-image: linear-gradient(
         rgba(0,0,0,1),
@@ -207,7 +210,7 @@ footer p{
     background-image: linear-gradient(
         rgba(0,0,0,.87),
         rgba(0,0,0,.8)
-    ), url(img/Wireframe\ -\ 8,2.png);
+    ), url(img/background-info.png);
     background-size: cover;
     background-attachment: fixed ;
 }
