@@ -219,91 +219,25 @@ footer p{
     background-attachment: fixed ;
 }
 
-.main-info_section1 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 120px;
-    padding: 20px;
-    padding-top: 80px;
-}
-
-.main-info_section1 img {
-    height: 150px;
-    width: 150px;
-}
-
-.main-info_section1 h1 {
+.main-info h1 {
     color: #fff;
     font-family: 'Bowlby One SC', cursive;
-    font-size: 100px;
-    padding-left: 20px;
-
+    font-size: 5vh;
+    padding: 0px 0 30px;
 }
 
 .main-info p {
     color: #fff;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 36px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3vh;
+    font-weight: 100;
 }
 
-.info-p_1 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 36px;
-}
-
-.info-p_1 img {
-    height: 320px;
-    padding: 36px;
-}
-
-.main-info h3 {
+.info h2 {
     color: #fff;
     font-family: 'Bowlby One SC', cursive;
-    font-size: 100px;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 100px;
-    padding-top: 50px;
-    height: 100px;
-    margin: 0px;
-}
-
-.info-p_2 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-}
-.info-p_2 img {
-    height: 320px;
-    padding: 36px;
-}
-
-.info-p_3 img {
-    height: 320px;
-    padding: 36px;
-}
-
-.info-p_3 {
-    padding: 36px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-}
-.main-info h4 {
-    color: #fff;
-    font-family: 'Bowlby One SC', cursive;
-    font-size: 100px;
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 80px;
-    padding-top: 50px;
-    height: 100px;
-    margin: 0px;
+    font-size: 4vh;
+    padding-bottom: 2vh;
 }
 
 .body-contacto {
