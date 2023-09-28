@@ -83,11 +83,14 @@ img{
 }
 
 .section-1 h1{
-    padding-top: 280px;
+    padding-top: 240px;
     padding-left: 115px;
     color: #FC4E03;
     font-family: 'Bowlby One SC', cursive;
     font-size: 120px;
+}
+.section-1 h2 {
+    display: none;
 }
 
 .section-2 {
@@ -177,6 +180,7 @@ footer p{
     color: #FC4E03;
     font-family: 'Bowlby One SC', cursive;
     font-size: 120px;
+    padding: 60px 0 60px 0px;
 }
 
 .main-discos_portada img {
@@ -390,3 +394,28 @@ input[type="date"] {
     padding-left: 20px;
 }
 
+
+.main-discos_portada h5{
+    color: blue;
+}
+
+.t {
+    text-decoration: none;
+    font-size: 35px;
+    color: #FC4E03;
+    font-family: 'Bowlby One SC', cursive;
+    font-weight: 100 ;
+}
+
+.t1 {
+    font-size: 60px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #ecf0f1;
+
+}
+
+.ihover:hover{
+    transform: scale(1.1);
+    transition: .2s;
+
+}
