@@ -9,30 +9,8 @@ img {
     max-width: 100%;
 }
 
-.header {
-    display: flex;
-    min-height: 70px;
-    justify-content: space-between;
-    padding: 10px 5px;
-    align-items: center;
-}
-
 .header a {
     text-decoration: none;
-}
-
-.navbar-item {
-    color: white;
-    padding-right: 30px;
-}
-
-.navbar-logo {
-    display: flex;
-}
-
-.navbar-logo img {
-    height: 90px;
-    padding-left: 100px;
 }
 
 .navbar a:hover {
@@ -47,7 +25,6 @@ img {
 }
 
 
-
 .body-menu {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)), url(img/image\ 6.png);
@@ -59,29 +36,31 @@ img {
     display: flex;
     align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-content: center;
     padding-bottom: 160px;
+    width: 88%;
+    padding-left: 15%;
 }
 
 .p-main p {
     font-family: 'Inter', sans-serif;
     font-style: italic;
     font-weight: bolder;
-    text-align: center;
+    text-align: start;
     color: white;
     text-shadow: #000 20px 10px 5px;
     font-size: 35px;
     height: 380px;
     width: 580px;
-    padding-left: 120px;
+    padding-left: 0px;
 
 }
 
 .p-main img {
-    height: 500px;
-    border-radius: 3%;
+    height: 370px;
+    border-radius: 1%;
+    padding-left: 0px;
 
 }
 
@@ -389,35 +368,57 @@ input[type="date"] {
     padding-left: 0px;
 }
 
+
+.nav-item {
+    font-size: 1.5rem;
+}
+
+
+
+
+.info {
+    background: #171717;
+}
+
+
+.info h2 {
+    color: #fff;
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 4vh;
+    padding-bottom: 1vh;
+    padding-top: 2vh;
+}
+
+#container-div img {
+    height: 100px;
+    padding: 0px 0px 0px 50px;
+}
+#container-div a {
+    font-family: 'Bowlby One SC', cursive;
+    letter-spacing: .15rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width : 800px) {
-
-    /* Navbar */
-    .header {
-        display: flex;
-        flex-direction: column;
-        padding: 10 0 0 0;
+    
+    .nav-item {
+        font-size: 1.5rem;
     }
-
-    .navbar-item {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-
-    }
-
-    .navbar-logo img {
-        display: flex;
-        padding: 0px;
-        justify-content: center;
-        height: 5em;
-    }
-
-    .navbar a {
-        font-size: 2.1rem;
-        display: flex;
-        justify-content: center;
-    }
-
+    
     /* index */
     .p-main {
         display: flex;
@@ -547,17 +548,8 @@ input[type="date"] {
 
 @media only screen and (max-width : 695px) {
 
-    .navbar a {
-        font-size: 1.5rem;
-        display: flex;
-        justify-content: center;
-    }
-    .navbar1 {
-        display: none
-    }
-    #navbar-mobile {
-        display: flex;
-    }
+    
+
 
     .p-main p {
         text-align: center;
@@ -573,17 +565,12 @@ input[type="date"] {
 
 @media only screen and (max-width : 545px) {
 
-    .navbar a {
-        font-size: .9rem;
-        display: flex;
-        justify-content: center;
+    .logo-p{
+        display: none ;
     }
-
-    .navbar-logo img {
-        display: flex;
+    #container-div img {
+        height: 80px;
         padding: 0px;
-        justify-content: center;
-        height: 3em;
     }
 
     .main-discos h1 {
@@ -615,19 +602,6 @@ input[type="date"] {
 
 @media only screen and (max-width : 390px) {
 
-    .navbar a {
-        font-size: .6em;
-        display: flex;
-        justify-content: center;
-    }
-
-    .navbar-logo img {
-        display: flex;
-        padding: 0px;
-        justify-content: center;
-        height: 3em;
-    }
-
     .main-discos h1 {
         font-size: 5vh;
     }
@@ -653,17 +627,4 @@ input[type="date"] {
         display: flex;
         justify-content: center;
     }
-}
-
-.info {
-    background: #171717;
-}
-
-
-.info h2 {
-    color: #fff;
-    font-family: 'Bowlby One SC', cursive;
-    font-size: 4vh;
-    padding-bottom: 1vh;
-    padding-top: 2vh;
 }

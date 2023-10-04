@@ -22,16 +22,43 @@
 
 <body class="body-discos">
     <header class="header">
-        <a href="index.html" class="navbar-logo">
-            <img src="img/Rectangle 10.png" alt="Vela puerca logo" class="vela-ico">
-        </a>
-        <nav class="navbar">
-            <a href="index.html" class="navbar-item">Inicio </a>
-            <a href="Galeria.html" class="navbar-item">Galeria</a>
-            <a href="Discos.html" class="navbar-item">Discos</a>
-            <a href="Info.html" class="navbar-item">Info</a>
-            <a href="Contacto.html" class="navbar-item">Contacto</a>
-        </nav>
+        <nav class="navbar navbar-dark bg-transparent" id="navbar-m">
+            <div class="container-fluid" id="container-div">
+              <a class="navbar-brand" href="index.html">
+                <img src="img/Rectangle 10.png" alt="Logo de La vela puerca"><span class="logo-p">La vela Puerca</span>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="Galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="Discos.html">Discos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="Info.html">Info</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Contacto.html">Contacto</a>
+                    </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+
     </header>
     <main>
         <section class="main-discos">
