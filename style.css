@@ -1,33 +1,27 @@
-a {
-    text-decoration: none;
-    font-family: 'Inter', sans-serif;
-    font-size: 25px;
-    font-weight: 900;
-}
-
+/* index */
 img {
     max-width: 100%;
 }
 
-.header a {
-    text-decoration: none;
-}
-
 .navbar a:hover {
     color: orange;
-    transition: .3s;
+    transition: 0.3s;
     transform: scale(1.06);
 }
 
-.navbar-logo img:hover {
+.navbar img:hover {
     transform: scale(1.1);
-    transition: .4s;
+    transition: 0.4s;
 }
 
-
 .body-menu {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(img/image\ 6.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/image\ 6.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.body-galeria {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/image\ 6.png);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -36,32 +30,35 @@ img {
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
-    padding-bottom: 160px;
     width: 88%;
-    padding-left: 15%;
+    padding: 5% 0 5% 5%;
 }
 
 .p-main p {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: italic;
     font-weight: bolder;
     text-align: start;
-    color: white;
+    color: #FFFFFF;
     text-shadow: #000 20px 10px 5px;
     font-size: 35px;
-    height: 380px;
-    width: 580px;
+    height: auto;
+    width: auto;
     padding-left: 0px;
-
 }
 
 .p-main img {
-    height: 370px;
-    border-radius: 1%;
-    padding-left: 0px;
+    width: 30%;
+    padding-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.section-1 {
+    margin-bottom: 4%;
 }
 
 .section-1 h1 {
@@ -76,7 +73,8 @@ img {
     display: none;
 }
 
-.section-2 {
+.image-scroll {
+    margin: auto;
     display: flex;
     flex-wrap: nowrap;
     overflow: scroll;
@@ -124,7 +122,7 @@ footer {
 }
 
 footer p {
-    color: white;
+    color: #FFFFFF;
     font-family: sans-serif;
     padding-right: 1em;
 }
@@ -144,7 +142,7 @@ footer p {
 }
 
 .social-ico {
-    color: white;
+    color: #FFFFFF;
 }
 
 .icons-social-container {
@@ -174,29 +172,6 @@ footer p {
     padding: 15px;
 }
 
-.section-1-discos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.section-2-discos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.section-3-discos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.section-4-discos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
 .body-info {
     background-image: linear-gradient(rgba(0, 0, 0, .87),
@@ -222,30 +197,48 @@ footer p {
 
 
 .body-contacto {
-    background-color: #000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/image\ 6.png);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .main-inputs {
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 40px;
     padding-top: 50px;
-    /* height: 400px ;
-    width: 700px; */
+    font-size: 1.2vw;
 }
 
+.main-inputs label{
+    color: #FC4E03;
+}
 
-.main-contacto h1,
-h2 {
+.main-contacto h1 {
     color: #FC4E03;
     font-family: 'Bowlby One SC', cursive;
     font-size: 60px;
     display: flex;
     justify-content: flex-start;
-    padding-left: 20px;
+    padding-left: 10%;
     margin: 0px;
+}
+.main-contacto h2 {
+    color: #c1c1c1;
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 40px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 11%;
+}
+.container-contacto{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    
 }
 
 input[type=text] {
@@ -266,6 +259,12 @@ input[type=text]:focus {
     transition: .5s;
 }
 
+textarea:focus {
+    background-color: #ffb696;
+    transition: .5s;
+}
+
+
 textarea {
     width: 600px;
     height: 150px;
@@ -275,12 +274,16 @@ textarea {
     border-radius: 4px;
     background-color: #f8f8f8;
     resize: none;
+    background-image: url("img/Rectangle\ 20.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    border-bottom: 4px solid #FC4E03;
 }
 
 input[type=submit] {
     width: 200px;
     background-color: #FC4E03;
-    color: white;
+    color: #FFFFFF;
     padding: 14px 20px;
     border: none;
     border-radius: 4px;
@@ -307,8 +310,8 @@ input[type="date"] {
 
 
 .yt-iframe {
-    padding-top: 120px;
-    padding-left: 20px;
+    padding-top: 3%;
+
 }
 
 
@@ -335,14 +338,6 @@ input[type="date"] {
 }
 
 
-.body-galeria {
-    background-image: linear-gradient(rgba(0, 0, 0, 1),
-            rgba(0, 0, 0, 0.5)), url(img/image\ 6.png);
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-
 .main-galery h1 {
     display: flex;
     color: #FC4E03;
@@ -352,7 +347,7 @@ input[type="date"] {
 }
 
 .main-galery p {
-    color: white;
+    color: #FFFFFF;
     font-family: 'Bowlby One SC', cursive;
     font-size: 36px;
     display: flex;
@@ -393,51 +388,46 @@ input[type="date"] {
     height: 100px;
     padding: 0px 0px 0px 50px;
 }
+
 #container-div a {
     font-family: 'Bowlby One SC', cursive;
     letter-spacing: .15rem;
 }
 
+.logomobile {
+    display: none;
+}
 
 
+@media only screen and (max-width : 860px) {
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width : 800px) {
-    
-    .nav-item {
-        font-size: 1.5rem;
-    }
-    
     /* index */
+    .section-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logomobile {
+        display: flex;
+        margin: auto;
+        width: 20vh;
+
+    }
+
+    .p-main img {
+        display: none;
+    }
+
     .p-main {
         display: flex;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: center;
-        padding-bottom: 100px;
-        padding-left: 0px;
+        flex-direction: column;
+
     }
 
     .p-main p {
-        text-align: center;
-        color: white;
-        font-size: 5vw;
-        height: 380px;
-        width: 580px;
         display: flex;
-        position: static;
+        flex-direction: column;
+        text-align: center;
 
     }
 
@@ -451,10 +441,6 @@ input[type="date"] {
         font-size: 10vw;
         color: #FC4E03;
         padding-top: 7vh;
-    }
-
-    .p-main img {
-        display: none;
     }
 
     .spotify-widget {
@@ -474,7 +460,8 @@ input[type="date"] {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        padding: 60px 0 0 100px
+        align-items: center;
+        margin: auto;
     }
 
     .spotify-widget-mobile iframe {
@@ -538,93 +525,16 @@ input[type="date"] {
     }
 
     .main-galery p {
-        color: white;
+        color: #FFFFFF;
         font-family: 'Bowlby One SC', cursive;
         font-size: 3vw;
         display: flex;
         justify-content: center;
+        margin: auto;
+        align-items: center;
     }
 }
 
-@media only screen and (max-width : 695px) {
-
-    
 
 
-    .p-main p {
-        text-align: center;
-        color: white;
-        font-size: 5vw;
-        height: 380px;
-        width: 580px;
-        padding: 0;
-
-    }
-
-}
-
-@media only screen and (max-width : 545px) {
-
-    .logo-p{
-        display: none ;
-    }
-    #container-div img {
-        height: 80px;
-        padding: 0px;
-    }
-
-    .main-discos h1 {
-        font-size: 4rem;
-    }
-
-    .icons-social-container {
-        display: none;
-    }
-
-    .main-galery h1 {
-        display: flex;
-        color: #FC4E03;
-        font-family: 'Bowlby One SC', cursive;
-        font-size: 10vw;
-        justify-content: center;
-    }
-
-    .main-galery p {
-        color: white;
-        font-family: 'Bowlby One SC', cursive;
-        font-size: 3vw;
-        display: flex;
-        justify-content: center;
-    }
-
-}
-
-
-@media only screen and (max-width : 390px) {
-
-    .main-discos h1 {
-        font-size: 5vh;
-    }
-
-
-    .t1 {
-        text-align: center;
-        font-size: 2vh;
-    }
-
-    .t {
-        font-size: 3vh;
-    }
-
-    .p-4 h2 {
-        text-align: center;
-    }
-
-    .main-galery p {
-        color: white;
-        font-family: 'Bowlby One SC', cursive;
-        font-size: 4vw;
-        display: flex;
-        justify-content: center;
-    }
-}
+@media only screen and (max-width : 430px)

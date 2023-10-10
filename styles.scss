@@ -1,0 +1,75 @@
+
+//index
+img {
+    max-width: 100%
+}
+
+@mixin navbar-hover_a {
+    color: orange;
+    transition: .3s;
+    transform: scale(1.06);
+}
+
+@mixin navbar-hover_img {
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+@mixin background-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/image\ 6.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar a:hover {
+    @include navbar-hover_a()
+}
+
+.navbar img:hover {
+    @include navbar-hover_img()
+}
+
+.body-menu {
+    @include background-1()
+}
+
+.body-galeria {
+    @include background-1
+}
+
+.p-main {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    width: 88%;
+    padding: 5% 0 5% 5%;
+
+    p {
+        font-family: 'Inter', sans-serif;
+        font-style: italic;
+        font-weight: bolder;
+        text-align: start;
+        color: white;
+        text-shadow: #000 20px 10px 5px;
+        font-size: 35px;
+        height: 300px;
+        width: 80vw;
+        padding-left: 0px;
+
+    }
+
+    img {
+        width: 30%;
+        padding-left: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.section-1 {
+    margin-bottom: 4%;
+}
