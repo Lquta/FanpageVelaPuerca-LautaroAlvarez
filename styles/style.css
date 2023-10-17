@@ -15,13 +15,13 @@ img {
 }
 
 .body-menu {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/image\ 6.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/image\ 6.png);
     background-size: cover;
     background-attachment: fixed;
 }
 
 .body-galeria {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/image\ 6.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/image\ 6.png);
     background-size: cover;
     background-attachment: fixed;
     overflow-x: hidden;
@@ -151,11 +151,14 @@ footer p {
     display: inline-block;
     padding-bottom: 1em;
 }
+.icons-social-container a { 
+    font-size: 1.8em;
+}
 
 /* Discos */
 .body-discos {
     background-image: linear-gradient(rgba(0, 0, 0, 1),
-            rgba(0, 0, 0, 0.5)), url(img/image\ 7.png);
+            rgba(0, 0, 0, 0.5)), url(../img/image\ 7.png);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -176,7 +179,7 @@ footer p {
 
 .body-info {
     background-image: linear-gradient(rgba(0, 0, 0, .87),
-            rgba(0, 0, 0, .8)), url(img/background-info.png);
+            rgba(0, 0, 0, .8)), url(../img/background-info.png);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -198,7 +201,7 @@ footer p {
 
 
 .body-contacto {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/image\ 6.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/image\ 6.png);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -251,7 +254,7 @@ input[type=text] {
     box-sizing: border-box;
     border: none;
     border-bottom: 4px solid #FC4E03;
-    background-image: url("img/Rectangle\ 20.png");
+    background-image: url("../img/Rectangle\ 20.png");
     background-position: right;
     background-repeat: no-repeat;
     padding-left: 40px;
@@ -277,7 +280,7 @@ textarea {
     border-radius: 4px;
     background-color: #f8f8f8;
     resize: none;
-    background-image: url("img/Rectangle\ 20.png");
+    background-image: url("../img/Rectangle\ 20.png");
     background-position: right;
     background-repeat: no-repeat;
     border-bottom: 4px solid #FC4E03;
@@ -328,7 +331,7 @@ input[type="date"] {
 
 
 .t1 {
-    font-size: 60px;
+    font-size: 1.2em;
     font-family: 'Montserrat Alternates', sans-serif;
     color: #ecf0f1;
 
@@ -405,6 +408,9 @@ input[type="date"] {
 @media only screen and (max-width : 860px) {
 
     /* index */
+    .logo-p {
+        display: none;
+    }
     .section-1 {
         display: flex;
         flex-direction: column;
@@ -473,7 +479,7 @@ input[type="date"] {
 
     /* footer */
     .aser {
-        display: flex;
+        display: none;
         height: 60px;
         width: auto;
 
@@ -482,13 +488,18 @@ input[type="date"] {
     .icons-social-container p {
         display: none;
     }
-
+    .icons-social-container {
+        font-size: 2.4em;
+        padding: 0;
+        margin: auto;
+        padding-right: 20% ;
+    }
     .social-ico {
         max-width: 2px;
     }
 
     .footer-m p {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     /* Discos */
@@ -615,5 +626,17 @@ input[type="date"] {
         display: flex;
         align-items: flex-end;
         margin: auto;
+    }
+}
+
+@media only screen and (max-width : 440px) {
+    .icons-social-container {
+        font-size: 2.3em;
+        padding: 0;
+        margin: auto;
+        padding-right: 0% ;
+    }
+    .footer-m p {
+        display: none;
     }
 }

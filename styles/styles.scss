@@ -16,7 +16,7 @@ img {
 
 @mixin background-1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(img/image\ 6.png);
+            rgba(0, 0, 0, 0.5)), url(../img/image\ 6.png);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -71,4 +71,8 @@ img {
 
 .section-1 {
     margin-bottom: 4%;
+}
+
+.t1 {
+    font-size: 12px;
 }
