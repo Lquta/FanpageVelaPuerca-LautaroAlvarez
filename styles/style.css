@@ -406,6 +406,7 @@ input[type="date"] {
 }
 
 
+
 @media only screen and (max-width : 860px) {
 
     /* index */
@@ -635,6 +636,71 @@ input[type="date"] {
     
 }
 
+
+@media only screen and (max-width : 1460px) {
+    .main-contacto {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .container-contacto {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    .yt-iframe {
+        display: flex;
+        width: 90vw;
+        height: 60vh;
+        margin: auto;
+        justify-content: center;
+    }
+
+
+
+    .main-inputs {
+        padding: 10px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        font-size: 1.4vh;
+    }
+
+    .main-inputs label {
+        font-size: 2vh;
+        padding: 6px;
+    }
+
+    input[type=text] {
+        width: 90vw;
+    }
+
+    textarea {
+        width: 90vw;
+    }
+
+    input[type=submit] {
+        display: flex;
+        width: 40%;
+        justify-content: center;
+        margin: auto;
+        margin-top: 20px;
+
+    }
+
+
+    input[type="date"] {
+        font-size: 13px;
+    }
+}
+
+
+
+
+
 @media only screen and (max-width : 470px) {
     .icons-social-container {
         font-size: 1.3em;
@@ -657,3 +723,4 @@ input[type="date"] {
         display: none;
     }
 }
+
