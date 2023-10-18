@@ -361,7 +361,8 @@ input[type="date"] {
 }
 
 .galeria__container {
-    padding: 4em;
+    margin: auto;
+    padding: 3vw;
 }
 
 
@@ -450,6 +451,7 @@ input[type="date"] {
         font-size: 10vw;
         color: #FC4E03;
         padding-top: 7vh;
+        font-family:'Bowlby One SC', cursive;
     }
 
     .spotify-widget {
@@ -582,7 +584,10 @@ input[type="date"] {
     }
 
     .yt-iframe {
-        display: none;
+        display: flex;
+        width: 90vw;
+        height: 60vh;
+        margin: auto;
     }
 
 
@@ -627,6 +632,7 @@ input[type="date"] {
         align-items: flex-end;
         margin: auto;
     }
+    
 }
 
 @media only screen and (max-width : 470px) {
@@ -637,6 +643,17 @@ input[type="date"] {
         padding-right: 0% ;
     }
     .footer-m p {
+        display: none;
+    }
+    .section-1 img {
+        display: none;
+
+    }
+    .p-main p{
+        font-size: 2.5vh ;
+    }
+
+    .yt-iframe {
         display: none;
     }
 }
